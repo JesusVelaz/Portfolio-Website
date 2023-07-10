@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Velazquez Portfolio Website</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("Qu8ax6wBQcIOJ5-02");
+      })();
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a> 
+        <a href="#services">Services</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#contact">Contact</a>
+        <!-- href="#about" references id=about -->
+      </nav>
+    </header>
+
+    <!--home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Jesus Velazquez</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>
+              Computer Science graduate with fundamental knowledge of software engineering, 
+              and development. Seeking to use a broad educational background with advanced 
+              analytical, technical, and programming skills.
+            </p>
+            <div class="social-media">
+              <a href="#"><i class='bx bxl-facebook'></i></a>
+              <a href="#"><i class='bx bxl-twitter'></i></a>
+              <a href="#"><i class='bx bxl-instagram' ></i></a>
+              <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1Dcicb2sD3NMkFxAZT-xKr5wIfxQPaV1G/view?usp=sharing" target="_blank" class="btn">View Resume</a>
+        </div>
+
+        <div class="home-img">
+          <img src="pictures/pic1.png">
+        </div>
+
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="pictures/pic2.png" alt="">
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Software Developer</h3>
+        <p>
+          Computer Science graduate with fundamental knowledge of software engineering, 
+          and development. Seeking to use a broad educational background with advanced 
+          analytical, technical, and programming skills.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+    
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class='bx bx-code-alt'></i>
+          <h3>Software Developement</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit voluptate magni fugit facere aliquid ex repellendus fugiat illo! Incidunt, quas.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bx-palette'></i>
+          <h3>Web Developement</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure dolore laborum quam asperiores ea minima accusantium facilis ad sint?</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bx-data'></i>
+          <h3>Data Analyst</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure dolore laborum quam asperiores ea minima accusantium facilis ad sint?</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section design  -->
+    <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+    
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="pictures/Project 1.JPG" alt="">
+        <div class="portfolio-layer">
+          <h4>Weather Application</h4>
+          <p>Written in Python, a weather application was made using Streamlit and AirVisual’s API. The application displays the selected location's temperature, humidity, and air quality.</p>
+          <a href="https://github.com/JesusVelaz/Weather-App" target="_blank"><i class='bx bx-link' ></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="pictures/Project 2.JPG" alt="">
+        <div class="portfolio-layer">
+          <h4>Stock Application</h4>
+          <p>This application was done in Python, using Yahoo Finance API to get information regarding the stock inputted. The application was made using Streamlit and displays valuable information regarding the company selected.</p>
+          <a href="https://github.com/JesusVelaz/Stocks-Application" target="_blank"><i class='bx bx-link' ></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="pictures/Project 3.JPG" alt="">
+        <div class="portfolio-layer">
+          <h4>Library Profile</h4>
+          <p>This project was created in Java using IntelliJ IDE, MySQL database, Spring Boot REST API, and Postman to make HTTP requests. In this project the four user stories completed were adding and updating user profiles, viewing a user profile, and adding credit card info to the user.</p>
+          <a href="https://github.com/JesusVelaz/SE-Library-Project" target="_blank"><i class='bx bx-link' ></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- contact section design -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <div class="input-box">
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="number" id="number" placeholder="Mobile Number">
+        <input type="text" id="subject" placeholder="Email Subject">
+      </div>
+      <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn" onclick="sendMail()">Send Message</button>
+    </form>
+  </section>
+  
+
+
+
+  <!-- footer design  -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; by Jesus Velazquez | All Rights Reserved </p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-chevron-up' ></i></a>
+    </div>
+  </footer>
+
+  <!-- scroll reveal  -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- typed js  -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!--custom js-->
+  <script src="script.js"></script>
+  </body>
+</html>
