@@ -48,6 +48,15 @@ section {
   z-index: 100;
 }
 
+.header a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.header a:hover {
+  color: var(--main-color);
+}
+
 .header.sticky {
   border-bottom: .1rem solid rgba(0,0,0, .2);
 }
