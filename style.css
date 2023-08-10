@@ -717,7 +717,7 @@ span {
     animation: animate 4s linear infinite;
     margin-left: 0rem;
     margin-right: 0;
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
   @keyframes animate {
     0% {
@@ -758,20 +758,7 @@ span {
   }
   
   .top::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background: #631717;
-    transform: translateZ(-100px);
-    filter: blur(30px);
-    box-shadow: 0 0 120px rgba(253, 45, 45, 0.2),
-    0 0 50px rgba(253, 45, 45, 0.4),
-    0 0 100px rgba(253, 45, 45, 0.6),
-    0 0 100px rgba(253, 45, 45, 0.8),
-    0 0 100px rgba(253, 45, 45, 1);
+    display: none;
   }
 
 }
