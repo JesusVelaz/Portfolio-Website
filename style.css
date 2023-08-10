@@ -717,6 +717,7 @@ span {
     animation: animate 4s linear infinite;
     margin-left: 0rem;
     margin-right: 0;
+    margin-top: 4rem;
   }
   @keyframes animate {
     0% {
@@ -769,8 +770,8 @@ span {
     box-shadow: 0 0 120px rgba(253, 45, 45, 0.2),
     0 0 50px rgba(253, 45, 45, 0.4),
     0 0 100px rgba(253, 45, 45, 0.6),
-    0 0 150px rgba(253, 45, 45, 0.8),
-    0 0 200px rgba(253, 45, 45, 1);
+    0 0 100px rgba(253, 45, 45, 0.8),
+    0 0 100px rgba(253, 45, 45, 1);
   }
 
 }
