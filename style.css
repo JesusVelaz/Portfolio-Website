@@ -66,6 +66,7 @@ section {
   color: var(--text-color);
   font-weight: 600;
   cursor: default;
+  text-decoration: none;
 }
 
 
@@ -189,6 +190,71 @@ span {
   margin-right: 11rem;
 }
 
+.cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 3s linear infinite;
+  margin-right: 28rem;
+  
+}
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg) 
+    
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg) 
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cube div span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#151515, #f03c3c);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #222;
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #631717;
+  transform: translateZ(-400px);
+  filter: blur(30px);
+  box-shadow: 0 0 120px rgba(253, 45, 45, 0.2),
+  0 0 200px rgba(253, 45, 45, 0.253),
+  0 0 300px rgba(253, 45, 45, 0.6),
+  0 0 400px rgba(253, 45, 45, 0.8),
+  0 0 500px rgba(253, 45, 45, 1);
+}
+
 .heading {
   text-align: center;
   font-size: 4.5rem;
@@ -221,6 +287,7 @@ span {
 }
 
 .services-container .services-box {
+  margin-top: 2rem;
   flex: 1 1 30rem;
   background: var(--second-bg-color);
   padding: 3rem 2rem 4rem;
@@ -284,6 +351,7 @@ span {
 
 .portfolio-box img {
   width: 100%;
+  /* height: 40rem; */
   transition: .5s ease;
 }
 
@@ -334,6 +402,7 @@ span {
 .portfolio-layer a i {
   font-size: 2rem;
   color: var(--second-bg-color);
+  
 }
 
 .contact h2 {
@@ -456,6 +525,72 @@ span {
     margin-right: 13rem;
   }
 
+  .cube {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+    margin-left: 50px;
+    margin-right: 15rem;
+    margin-top: 5rem;
+    
+  }
+  @keyframes animate {
+    0% {
+      transform: rotateX(-30deg) rotateY(0deg)
+    }
+    100% {
+      transform: rotateX(-30deg) rotateY(360deg)
+    }
+  }
+  
+  .cube div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+  
+  .cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(#151515, #f03c3c);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+  }
+  
+  .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(75px);
+  }
+  
+  .top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #631717;
+    transform: translateZ(-200px);
+    filter: blur(30px);
+    box-shadow: 0 0 120px rgba(253, 45, 45, 0.2),
+    0 0 100px rgba(253, 45, 45, 0.4),
+    0 0 150px rgba(253, 45, 45, 0.6),
+    0 0 200px rgba(253, 45, 45, 0.8),
+    0 0 250px rgba(253, 45, 45, 1);
+  }
+
   .services {
     padding-bottom: 7rem;
   }
@@ -479,6 +614,10 @@ span {
     border-top: .1rem solid rgba(0,0,0, .2);
     box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
     display: none;
+  }
+
+  .cube {
+    margin-right: 0;
   }
 
   .navbar.active {
@@ -543,6 +682,9 @@ span {
     margin-left: .1rem;
   }
 
+  .cube {
+    margin-top: 7rem;
+  }
   .portfolio-layer h4 {
     font-size: 1.8rem;
   }
@@ -566,6 +708,73 @@ span {
   .contact form .input-box input {
     width: 100%;
   }
+
+  .cube {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+    margin-left: 0rem;
+    margin-right: 0;
+    margin-top: 8rem;
+    
+  }
+  @keyframes animate {
+    0% {
+      transform: rotateX(-30deg) rotateY(0deg)
+    }
+    100% {
+      transform: rotateX(-30deg) rotateY(360deg)
+    }
+  }
+  
+  .cube div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+  
+  .cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#151515, #f03c3c);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+  }
+  
+  .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(50px);
+  }
+  
+  .top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: #631717;
+    transform: translateZ(-150px);
+    filter: blur(30px);
+    box-shadow: 0 0 120px rgba(253, 45, 45, 0.2),
+    0 0 100px rgba(253, 45, 45, 0.4),
+    0 0 150px rgba(253, 45, 45, 0.6),
+    0 0 200px rgba(253, 45, 45, 0.8),
+    0 0 250px rgba(253, 45, 45, 1);
+  }
+
 }
 
 @media (max-width: 365px) {
